@@ -1,15 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shaquille O'Neal</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+</head>
+
 <body>
 
+    <!-- HEADER -->
     <div id="top" class="header">
         <h1>Shaquille O'Neal: Career & Legacy</h1>
     </div>
 
+    <!-- MAIN CONTENT -->
     <div class="mainbody">
-        <p>Shaquille O'Neal is one of the most dominant players in NBA history. He was known for his size, strength, and personality both on and off the court.</p>
 
-      <img src="https://ih1.redbubble.net/image.3541255064.3513/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" 
-     alt="Shaquille O'Neal" 
-     width="300">
+        <p>
+            Shaquille O'Neal is one of the most dominant players in NBA history.
+            He was known for his size, strength, and personality.
+        </p>
+
+        <img src="https://ih1.redbubble.net/image.3541255064.3513/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+             alt="Shaquille O'Neal"
+             width="300">
+
         <h2>Career Highlights</h2>
 
         <ol>
@@ -26,8 +41,8 @@
 
             <li>Championships
                 <ul>
-                    <li>3× NBA Champion (Los Angeles Lakers: 2000–2002)</li>
-                    <li>1× NBA Champion (Miami Heat: 2006)</li>
+                    <li>3x NBA Champion (Los Angeles Lakers: 2000–2002)</li>
+                    <li>1x NBA Champion (Miami Heat: 2006)</li>
                 </ul>
             </li>
 
@@ -38,20 +53,64 @@
                 </ul>
             </li>
         </ol>
-<div>
-    <h2>Highlights Video</h2>
 
-    <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/Y17Up5ELQx8"
-    title="YouTube video player"
-    frameborder="0"
-    allowfullscreen></iframe>
-</div>
-        <h2>Basketball Data Visualization</h2>
-        <!-- your Tableau embed goes here -->
     </div>
 
-    <div class="footer">
+    <!-- VIDEO -->
+    <div>
+        <h2>Highlights Video</h2>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Y17Up5ELQx8"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- TABLEAU -->
+    <div>
+        <h2>Basketball Data Visualization</h2>
+
+        <div class='tableauPlaceholder' id='viz1776716876080' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 1'
+                    src='https://public.tableau.com/static/images/NB/NBABasketballTeams/Dashboard1/1_rss.png'
+                    style='border: none' />
+                </a>
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='NBABasketballTeams/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1776716876080');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width='1000px';
+                vizElement.style.height='600px';
+            } else {
+                vizElement.style.width='100%';
+                vizElement.style.height='600px';
+            }
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <!-- FOOTER LINKS -->
+    <div>
         <p>
             <a href="index.html">My Resume</a> |
             <a href="app.html">My Web App</a> |
@@ -60,3 +119,4 @@
     </div>
 
 </body>
+</html>
