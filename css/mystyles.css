@@ -13,7 +13,7 @@ body {
 }
 
 .mainbody {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -28,6 +28,14 @@ h2 {
     margin-top: 30px;
 }
 
+p {
+    line-height: 1.5;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
 img {
     display: block;
     margin: 20px auto;
@@ -40,8 +48,4 @@ iframe {
 
 .tableauPlaceholder {
     margin: 20px auto;
-}
-
-p {
-    line-height: 1.5;
 }
