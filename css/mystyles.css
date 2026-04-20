@@ -10,42 +10,86 @@ body {
     background-color: purple;
     color: white;
     padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .mainbody {
-    width: 80%;
+    width: 75%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    text-align: left;  
+    padding: 30px 20px;
+    text-align: left;
 }
 
 .footer {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 40px 0;
     padding: 10px;
 }
 
+.intro {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 52px;
+}
+
 h2 {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+ol {
+    margin-left: 40px;
+    padding-left: 20px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 25px;
+    padding-left: 20px;
+    font-size: 28px;
+    line-height: 1.5;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 img {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
+    border-radius: 8px;
 }
 
 iframe {
     display: block;
     margin: 20px auto;
+    max-width: 100%;
+}
+
+.tableau-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .tableauPlaceholder {
-    margin: 20px auto;
+    max-width: 100%;
 }
-ol, ul {
-    text-align: left;
+
+a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
 }
