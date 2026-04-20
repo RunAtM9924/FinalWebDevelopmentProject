@@ -13,9 +13,10 @@ body {
 }
 
 .mainbody {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
+    text-align: left;
 }
 
 .footer {
@@ -30,10 +31,6 @@ h2 {
 
 p {
     line-height: 1.5;
-}
-
-ol, ul {
-    margin-left: 20px;
 }
 
 img {
