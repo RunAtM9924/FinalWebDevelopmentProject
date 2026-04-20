@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaq Trivia Game</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Shaq Trivia Game</h1>
+
+    <p id="question">Click Start to Play</p>
+
+    <button onclick="startGame()">Start</button>
+    <br><br>
+
+    <button onclick="checkAnswer('a')">A</button>
+    <button onclick="checkAnswer('b')">B</button>
+    <button onclick="checkAnswer('c')">C</button>
+
+    <p id="feedback"></p>
+    <p id="score">Score: 0</p>
+
+    <br>
+    <a href="scratch.html">Back to Shaq Page</a>
+</div>
+
+<script>
+    let score = 0;
+    let currentQuestion = 0;
+
+    const questions = [
+        {
+            question: "Which team did Shaq win most of his championships with?",
+            options: ["A: Miami Heat", "B: Los Angeles Lakers", "C: Orlando Magic"],
+            answer: "b"
+        },
+        {
+            question: "How many total NBA championships did Shaq win?",
+            options: ["A: 3", "B: 4", "C: 5"],
+            answer: "b"
+        },
+        {
+            question: "What position did Shaq play?",
+            options: ["A: Guard", "B: Forward", "C: Center"],
+            answer: "c"
+        }
+    ];
+
+    function startGame() {
+        score = 0;
+        currentQuestion = 0;
+        showQuestion();
+    }
+
+    function showQuestion() {
+        let q = questions[currentQuestion];
+        document.getElementById("question").innerHTML =
+            q.question + "<br>" +
+            q.options[0] + "<br>" +
+            q.options[1] + "<br>" +
+            q.options[2];
+
+        document.getElementById("feedback").innerHTML = "";
+    }
+
+    function checkAnswer(choice) {
+        let q = questions[currentQuestion];
+
+        if (choice === q.answer) {
+            document.getElementById("feedback").innerHTML = "Correct!";
+            score++;
+        } else {
+            document.getElementById("feedback").innerHTML = "Wrong!";
+        }
+
+        document.getElementById("score").innerHTML = "Score: " + score;
+
+        currentQuestion++;
+
+        if (currentQuestion < questions.length) {
+            showQuestion();
+        } else {
+            document.getElementById("question").innerHTML = "Game Over!";
+        }
+    }
+</script>
+
+</body>
+</html>
