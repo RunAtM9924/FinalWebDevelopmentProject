@@ -16,6 +16,7 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    text-align: left;  
 }
 
 .footer {
@@ -44,4 +45,7 @@ iframe {
 
 .tableauPlaceholder {
     margin: 20px auto;
+}
+ol, ul {
+    text-align: left;
 }
